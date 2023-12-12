@@ -18,82 +18,34 @@
 <p align="center">
   <a href="#¿Qué-es-TSDS-Forum?">¿Qué es?</a> •
   <a href="#Funcionamiento">Funcionamiento</a> •
+<a href="#Descargar">Descargar</a> 
 </p>
 
 ![screenshot](https://imgur.com/GRDLKz5.jpg)
 
 ## ¿Qué es TSDS Forum?
 
-
+T.S.D.S Forum es un intento de foro creado con HTML, JavaScript, Boostrap utilizando la tecnologia de <a href="https://restdb.io"> restdb.io </a> para almacenar nuestros datos y luego mediante un llamado a la API este ejecutar lo que nostros querramos. El proyecto de T.S.D.S Forum es un trabajo final para la catedra Ingenieria en Software del Instituto Superior N°20 de la Ciudad de San Justo, Provincia de Santa Fe, Argentina. Donde con este proyecto buscamos afianzar conocimientos, tomar experiencia con trayecto progresivo y sobre todas las cosas aprender e idear formas potenciando el autodidactismo.
 
 ## Funcionamiento
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+T.S.D.S Forum tiene varios funcionamientos si bien es un sitio bastante precario en terminos de "foros" cuenta con algunos sistemas esceniales.
 
-```bash
-# Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+- Inicio: En este apartado podremos ver todas las categorias disponibles del foro y a las cuales podamos acceder.
+- Perfil: En este apartado tendremos nuestro perfil (no funcional solo visual).
+- Administracion: En este apartado tenemos nuestro panel de administracion con 3 funciones basicas.
+  	- Dashboard: Nos permitira ver la cantidad de categorias, posts y usuarios creados.
+  	- Categorias: Nos permitira ver/editar/borrar categorias.
+  	- Posts: Nos permitira ver/borrar los posts.
 
-# Go into the repository
-$ cd electron-markdownify
+Si bien el sistema es bastante precario como se menciono encima este es el primer proyecto de muchos que llevare acabo con el Instituto Superior N°20 y en un futuro espero realizar una V2.0.0 con react, mongodb y otras tecnologias que potencien este sistema a un siguiente nivel haciendolo funcional y utilizable permitiendo que cualquier usuario que quiera descargar este repositorio pueda aprender. El proyecto es un nivel inicial/principante tanto en back como en el front, sin embargo, si buscas aprender este sitio sera de bastante ayuda para entender algunos conceptos y realizar difernetes formas.
 
-# Install dependencies
-$ npm install
+## Opinion personal
 
-# Run the app
-$ npm start
+La pagina web creada fue todo un desafio y no logre acabarla por completo para el dia del examen, sin embargo, cumpli con los objetivos institucionales pactados aunque me hubiese gustado terminarla por completo (la actualizaré aqui) encarar un proyecto como este sabiendo nada o poco demuestra una vez más mi compromiso con el aprendizaje, el crecimiento y sobre todas las cosas la experiencia ya que durante este proyecto estuve más de 100hs entre investigando y probando a hacer todo sin mirar videos o tutoriales que me enseñen hacerlo quiero y necesito deducirlo y hacerlo yo "No hay ayuda más valiosa que el pensamiento de uno mismo". Si eres principante o estas arrancando con HTML/CSS/JAVASCRIPT y quieren consumir una API estoy seguro que este sitio podra ayudarte.
+
+## Descargar
 ```
-
-> **Note**
-> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
-
-
-## Download
-
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows, macOS and Linux.
-
-## Emailware
-
-Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
-
-## Credits
-
-This software uses the following open source packages:
-
-- [Electron](http://electron.atom.io/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-- [showdown](http://showdownjs.github.io/showdown/)
-- [CodeMirror](http://codemirror.net/)
-- Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
-- [highlight.js](https://highlightjs.org/)
-
-## Related
-
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
-
-## Support
-
-<a href="https://www.buymeacoffee.com/5Zn8Xh3l9" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
-
-<p>Or</p> 
-
-<a href="https://www.patreon.com/amitmerchant">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
-## You may also like...
-
-- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
-
-## License
-
-MIT
-
----
-
-> [amitmerchant.com](https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
-> GitHub [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/amit_merchant)
-
+git clone https://github.com/PantuflaGaming/TSDSForum.git
+git checkout main
+```
