@@ -16,14 +16,14 @@
 </p>
 
 <p align="center">
-  <a href="#¿Qué-es-TSDS-Forum?">¿Qué es?</a> •
+  <a href="#¿Que-es-TSDS-Forum?">¿Qué es?</a> •
   <a href="#Funcionamiento">Funcionamiento</a> •
 <a href="#Descargar">Descargar</a> 
 </p>
 
 ![screenshot](https://imgur.com/GRDLKz5.jpg)
 
-## ¿Qué es TSDS Forum?
+## ¿Que es TSDS Forum?
 
 T.S.D.S Forum es un intento de foro creado con HTML, JavaScript, Boostrap utilizando la tecnologia de <a href="https://restdb.io"> restdb.io </a> para almacenar nuestros datos y luego mediante un llamado a la API este ejecutar lo que nostros querramos. El proyecto de T.S.D.S Forum es un trabajo final para la catedra Ingenieria en Software del Instituto Superior N°20 de la Ciudad de San Justo, Provincia de Santa Fe, Argentina. Donde con este proyecto buscamos afianzar conocimientos, tomar experiencia con trayecto progresivo y sobre todas las cosas aprender e idear formas potenciando el autodidactismo.
 
