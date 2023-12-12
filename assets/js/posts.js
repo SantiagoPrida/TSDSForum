@@ -106,8 +106,8 @@ const listeningPosts = {
                   <strong class="d-block text-gray-dark">${post.name.toLowerCase()}</strong>
                   ${post.content}
                     <div class="align-item-end icons">    
-                        <a href="#" class="admniCategories" onclick="appCategoriesAdmin.removeCategories('${post._id}','${post.name}')"><i class="fa-solid fa-trash removeIcon"></i></a>
-                        <a href="#" class="admniCategories" onclick="appCategoriesAdmin.editCategories('${post._id}');"><i class="fa-solid fa-pencil"></i></a>
+                        <a href="#" class="admniCategories" onclick="listeningPosts.remove('${post._id}','${post.name}')"><i class="fa-solid fa-trash removeIcon"></i></a>
+                        <a href="#" class="admniCategories" onclick="listeningPosts.notify()"><i class="fa-solid fa-pencil"></i></a>
                     </div>
                 </p>
               </div>
@@ -157,6 +157,46 @@ const listeningPosts = {
             window.location.href = "/./pages/categorias/logica.html";
         });
 
+    },
+    remove: (idAEliminar, nombreABorrar) =>{
+        Swal.fire({
+            title: `Seguro que quiere borrar el post ${nombreABorrar}?`,
+            text: "Todos los mensajes y contenidos se eliminaran con el.",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#d33',
+            cancelButtonColor: '#3085d6',
+            cancelButtonText: 'Cancelar',
+            confirmButtonText: 'Borrar',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                if (result.isConfirmed) {
+                    fetch(`${url.url}/${idAEliminar}?apikey=${url.api}`, {
+                        method: 'DELETE'
+                    })
+                        .then(response => {
+                            console.log(response);
+                            return listeningPosts.listen();
+                        }).then(response => {
+                            Swal.fire({
+                                position: "center",
+                                icon: "success",
+                                title: `${nombreABorrar} fue eliminado con exito.`,
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                        });
+                }
+            }
+        })
+
+    },
+    notify: () =>{
+        Swal.fire({
+            title: "Próximamente",
+            text: "Deshabilitado",
+            icon: "question"
+          });;
     }
 
 }
