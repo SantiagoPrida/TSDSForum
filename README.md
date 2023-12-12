@@ -16,13 +16,13 @@
 </p>
 
 <p align="center">
-  <a href="#¿Qué-es-T.S.D.S-Forum?">¿Qué es?</a> •
+  <a href="#¿Qué-es-TSDS-Forum?">¿Qué es?</a> •
   <a href="#Funcionamiento">Funcionamiento</a> •
 </p>
 
 ![screenshot](https://imgur.com/GRDLKz5.jpg)
 
-## ¿Qué es T.S.D.S Forum?
+## ¿Qué es TSDS Forum?
 
 
 
