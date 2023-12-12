@@ -66,11 +66,61 @@
 
   <main class="container">
     <div class="my-3 p-3 bg-body rounded shadow-sm">
-      <h6 class="border-bottom pb-2 mb-0 text-center">INGLES</h6>
+      <div class="main">
+        <button class="btn btn-primary button" type="button" data-bs-toggle="modal" data-bs-target="#addPost">Nueva Entrada</button>
+        <h6 class="border-bottom pb-2 mb-0 text-center">Ingles</h6>
+      </div>
       <div id="posts">
       </div>
     </div>
   </main>
+
+  <div class="modal fade" id="addPost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fa-solid fa-square-plus"></i> Nueva Entrada </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="addBooksForm" onsubmit="return false;">
+            <div class="input-group mb-3">
+              <input type="hidden" id="txtId">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-folder fa-shake"
+                  style="--fa-animation-duration: 5s;"></i></span>
+              <input type="text" id="txtTitle" class="form-control " placeholder="Titulo del post"
+                aria-label="text" aria-describedby="basic-addon1" required>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-message"
+                  style="--fa-animation-duration: 5s;"></i></span>
+              <input type="text" id="txtContent" class="form-control" placeholder="Contenido" aria-label="text"
+                aria-describedby="basic-addon1" required>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text"><i class="fa-solid fa-table-list"></i></span>
+                  <select class="form-select" id="categorie" value="Logica" aria-label="Default select example">
+                    <option value="1" disabled>Logica</option>
+                    <option value="2" selected>Ingles</option>
+                    <option value="3" disabled>Ingenieria en Software</option>
+                  </select>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-calendar-days"></i></span>
+              <input type="date" id="date" class="form-control" aria-label="text" aria-describedby="basic-addon1" required>
+            </div>
+            <input type="submit" id="botonCambiar" value="Añadir" class="form-control btn btn-sumbit"
+              onclick="listeningPosts.addPost();">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("date").valueAsDate = new Date();
+   </script>
 
 </body>
 
