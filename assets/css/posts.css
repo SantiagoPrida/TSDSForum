@@ -1,0 +1,62 @@
+div.timeSnap{
+    position: relative;
+    width: auto;
+    height: 20px;
+    top: 30px;
+    right: 63px;
+    font-size: 12px;
+    padding: 0px 4px 0px 4px;
+    background-color: rgb(247, 247, 247, 0.90);
+    border: 1px solid rgb(0, 0, 0,0.2);
+    border-radius: 10px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .title{
+    position: relative;
+    color: black;
+    top: 15px;
+  }
+  .title:hover{
+    color: rgb(78, 78, 78);
+  }
+
+  .dateText {
+    position: relative;
+    top: -25px;
+    right: -945px;
+    font-size: 12px;
+  }
+
+  #image{
+    position: relative;
+    top: 10px;
+  }
+
+    .dateText {
+    position: relative;
+    top: -25px;
+    right: -945px;
+    font-size: 12px;
+  }
+
+.button{
+  position: relative;
+  left: 88.6%;
+  top: 10px;
+  background-color: #8cc74e;
+  border-color: #8cc74e;
+  border-radius: 20px;
+}
+
+.button:hover{
+  background-color: #76a742;
+  border-color: #76a742;
+  color: #37521a;
+  left: 88%;
+
+  transform: scale(1.05);
+}

@@ -1,0 +1,45 @@
+.input-group-text{
+    color: white;
+    background-color: #7e7e7e;
+  }
+
+  .btn-sumbit{
+    color: rgb(255, 255, 255);
+    background-color: #7bb1b8;
+  }
+
+.btn{
+    font-size: 14px;
+  }
+
+.icons{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  top: 5px;
+  right: 50px;
+}
+
+.removeIcon:hover{
+  color:#579bff;
+}
+
+.admniCategories{
+  width: 10px;
+  height: 10px;
+}
+
+
+/* Header */
+
+a.nav-link.active {
+  background-color: rgb(103, 101, 134);
+  border-radius: 2px 2px 10px 10px;
+  color:#ffffff;
+}
+
+a.nav-link.active:hover {
+  color: #e7e7e7;
+
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  font-family: 'Poppins';
+}
+
+body {
+  padding-top: 56px;
+}
+.nav-scroller .nav {
+  color: rgba(255, 255, 255, .75);
+}
+.nav-scroller .nav-link {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  font-size: .875rem;
+  color: #6c757d;
+}
+
+.nav-scroller .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-scroller .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.bg-purple {
+  background-color: rgb(0,131,235);
+}
+
+.badge{
+  cursor: default;
+}
+.nav{
+  height: 56px;
+  align-items: center;
+  position: sticky;
+}
+nav .profile img{
+  position: absolute;
+  top: -1px;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  right: 0;
+  cursor: default;
+}
+
+nav .profile .connection{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #20d450;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2.5rem;
+  right: 1.5rem;
+}
+
+nav .show-more{
+  top: 15px;
+  align-items: center;
+  padding-top: 4px;
+  width: 20px;
+  height: 20px;
+  font-weight: 700;
+  font-size: 12px;
+  position: absolute;
+  display: flex;
+  color: black;
+  right: -3px;
+}
+
+

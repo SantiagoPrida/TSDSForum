@@ -1,0 +1,27 @@
+
+.imgRound{
+    position: relative;
+    top: -80px;
+    left: 30px;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border-top: 5px solid #ffffff;
+    border-left: 5px solid #ffffff;
+    border-right: 5px solid #ffffff;
+    transition: transform 2s;
+}
+
+.imgRound:hover{
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 775px) {
+    .imgRound{
+        width: 64px;
+        height: 64px;
+        top: -50px;
+        left: 25px;
+    }
+
+}
