@@ -23,7 +23,7 @@
   <script src="https://kit.fontawesome.com/5028895ff6.js" crossorigin="anonymous"></script>
 
   <!-- JavaScript -->
-  <script src="/./assets/js/categories.js"></script>
+  <script src="/./assets/js/categoriesAdmin.js"></script>
   <script src="/assets/js/notice.js"></script>
 
   <title>ADMIN - Dashboard</title>
@@ -74,8 +74,8 @@
 
   <!-- FIN NAVBAR SECUNDARY -->
 
-  <main class="container">
-    <div class="container-lg mb-2 mt-2">
+  <main class="container-lg">
+    <div class="mb-2 mt-2">
       <div class="d-grid gap-2">
         <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#addNotice" id="btn-addBook">
           <i class="bi bi-plus-circle"></i>
@@ -83,7 +83,7 @@
         </button>
       </div>
     </div>
-    <div class="container-lg mb-2 mt-2">
+    <div class="mb-2 mt-2">
       <div class="d-grid gap-2">
         <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#addCategorie"
           id="btn-addBook">
@@ -99,7 +99,7 @@
 
 
 
-  <!-- Añadir notiica -->
+  <!-- Añadir notica -->
   <div class="modal fade" id="addNotice" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
@@ -115,6 +115,52 @@
                 aria-describedby="basic-addon1">
             </div>
             <input type="submit" value="Actualizar" class="form-control btn btn-primary" onclick="actualizarAnuncio()">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Añadir categoria -->
+  <div class="modal fade" id="addCategorie" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"><i class="fa-solid fa-puzzle-piece"></i> Añadir
+            categoria</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="addBooksForm" onsubmit="return false;">
+            <div class="input-group mb-3">
+              <input type="hidden" id="txtId">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-folder fa-shake"
+                  style="--fa-animation-duration: 5s;"></i></span>
+              <input type="text" id="txtName" class="form-control" placeholder="Nombre de la categoria."
+                aria-label="text" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-regular fa-message"
+                  style="--fa-animation-duration: 5s;"></i></span>
+              <input type="text" id="txtDesc" class="form-control" placeholder="Descripción" aria-label="text"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-arrow-up-right-from-square"
+                  style="--fa-animation-duration: 5s;"></i></span>
+              <input type="text" id="txtRedirect" class="form-control" placeholder="Redireccion" aria-label="text"
+                aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-palette"
+                  style="--fa-animation-duration: 5s;"></i></span>
+              <input type="color" id="color" class="form-control" placeholder="Color" aria-label="text"
+                aria-describedby="basic-addon1">
+            </div>
+            <input type="submit" id="botonCambiar" value="Añadir" class="form-control btn btn-sumbit"
+              onclick="appCategoriesAdmin.addCategories();">
           </form>
         </div>
       </div>
